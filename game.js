@@ -33,15 +33,15 @@ let win = 0;
 let loose = 0;
 
 const choises = ["rock", "paper", "scissor"];
-let compchoise = Math.floor(Math.random() * 3);
-
+let number = Math.floor(Math.random() * 3);
+let compchoise=choises[number];
 function rock() {
     if (compchoise == "scissor") {
         win = win + 1;
         document.getElementById("won-score").innerHTML = win;
         document.getElementById("happenning").innerHTML = "won";
     }
-    else if (compchoise = "paper") {
+    else if (compchoise == "paper") {
         loose = loose + 1;
         document.getElementById("lost-score").innerHTML = loose;
         document.getElementById("happenning").innerHTML = "lost";
@@ -61,7 +61,7 @@ function paper() {
         document.getElementById("happenning").innerHTML = "won";
 
     }
-    else if (compchoise = "scissor") {
+    else if (compchoise == "scissor") {
         loose = loose + 1;
         document.getElementById("lost-score").innerHTML = loose;
         document.getElementById("happenning").innerHTML = "lost";
@@ -80,7 +80,7 @@ function scissor() {
         document.getElementById("happenning").innerHTML = "won";
 
     }
-    else if (compchoise = "rock") {
+    else if (compchoise == "rock") {
         loose = loose + 1;
         document.getElementById("lost-score").innerHTML = loose;
         document.getElementById("happenning").innerHTML = "lost";
