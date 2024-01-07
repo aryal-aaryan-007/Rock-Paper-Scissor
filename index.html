@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="game.css">
+
+</head>
+
+
+<body class="body" style="background-color: rgb(167, 81, 167);">
+    <script src="game.js"></script>
+
+
+    <div class="header-box">
+        <img src="images/game-logo.webp" class="game-logo">
+        <h onclick="startpage()" class="game-name">Rock Paper Scissors</h>
+    </div>
+
+    <div id="clos" class="rule-container">
+        <div id="rule-b0x" class="rule-box">
+
+            <img class="rule-img" src="images/rps-rule.webp">
+            <img onclick="cross()" class="cross" src="images/cross.png">
+
+        </div>
+
+    </div>
+    <div id="main-b0x">
+        <div class="box1">
+            <h1 class="title">Rock Paper Scissors</h1>
+
+            <button onclick="rule()" class="rule-button">Rules</button>
+
+            <button onclick="start()" class="start-button">Start</button>
+            <p class="creator">
+                Creator: Aaryan Aryal
+            </p>
+        </div>
+    </div>
+    <div id="info-b0x" class="info-box">
+        <h1 class=" info">You:</h1>
+        <p class="happen" id="happenning"></p>
+        <h1 class=" info">this time</h1>
+    </div>
+
+
+    <div id="gameplay" class="main-game">
+
+        <div onclick="rock()" class="rock-holder"><img class="rock" src="images/rock.png"></div>
+        <div onclick="paper()" class="paper-holder"> <img class="paper" src="images/paper.png"></div>
+        <div onclick="scissor()" class="scissor-holder"> <img class="scissor" src="images/scissor.png"></div>
+
+
+        <div id="score-vis" class="score">
+            <img onclick="cross2()" class="cross2" src="images/cross.png">
+
+            <p class="score-notation">Game won:
+            <p id="won-score" class="scores"></p>
+            </p>
+
+            <p class="score-notation">Game lost:
+            <p id="lost-score" class="scores"></p>
+            </p>
+
+            <p class="score-notation">Game drawn:
+            <p id="drawn-score" class="scores"></p>
+            </p>
+
+        </div>
+        <button class="score-display" onclick="scoreboard()">Score</button>
+    </div>
+</body>
+
+</html>

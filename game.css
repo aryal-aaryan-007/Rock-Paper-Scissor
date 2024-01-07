@@ -1,0 +1,478 @@
+.info-box {
+    margin-left: 1040px;
+    height: 160px;
+    width: 250px;
+    background-color: rgb(132, 23, 172);
+    border: solid;
+    border-width: 3px;
+    border-color: aliceblue;
+    padding-left: 20px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.info {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.happen {
+    font-size: 55px;
+    display: inline-block;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.header-box {
+    display: flex;
+    align-items: start;
+    z-index: 30;
+
+}
+
+.game-name {
+    color: rgb(28, 28, 173);
+    font-size: 40px;
+    padding-left: 40px;
+    cursor: default;
+    position: absolute;
+    z-index: 30;
+    padding-left: 100px;
+
+}
+
+.game-logo {
+    height: 55px;
+    width: 55px;
+    border-radius: 120px;
+    margin-left: 30px;
+}
+
+.game-logo:hover {
+    opacity: 0.4;
+    transition: .25s;
+
+}
+
+
+
+.game-name:hover {
+    color: rgb(7, 227, 227);
+}
+
+.body {
+    display: inline-block;
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 580px;
+    margin-right: auto;
+    margin-top: 180px;
+    color: rgb(21, 11, 11);
+    height: 390px;
+    width: 360px;
+    background-image: radial-gradient(circle, rgb(235, 235, 20), rgba(100, 0, 0, 0.536), rgb(20, 20, 108));
+    z-index: 20;
+    border: solid;
+    border-width: 2px;
+    border-radius: 48px;
+    z-index: 20;
+    position: absolute;
+}
+
+.main-game {
+    position: absolute;
+    z-index: 5;
+    visibility: hidden;
+}
+
+.title {
+    display: block;
+    padding-bottom: 0px;
+}
+
+.start-button {
+    height: 44px;
+    width: 190px;
+    border: solid;
+    border-color: white;
+    border-width: 3px;
+    background-color: rgb(86, 86, 191);
+    border-radius: 100px;
+    font-size: 24px;
+    position: absolute;
+    margin-top: 135px;
+}
+
+.rule-button {
+    height: 44px;
+    width: 190px;
+    border: solid;
+    border-color: white;
+    border-width: 3px;
+    background-color: rgb(86, 86, 191);
+    border-radius: 100px;
+    font-size: 24px;
+    position: absolute;
+    margin-top: 200px;
+
+}
+
+.rule-button:hover {
+    opacity: 0.8;
+    transition: 0.55s;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    opacity: 0.8;
+    transition: 0.55s;
+    cursor: pointer;
+}
+
+.creator {
+    font-size: 21px;
+    margin-top: 250px;
+    margin-left: 0px;
+    color: rgb(2, 41, 47);
+}
+
+.rule-box {
+    position: absolute;
+    margin-left: 510px;
+    margin-top: 160px;
+    z-index: 22;
+    height: 500px;
+    width: 500px;
+    background-color: wheat;
+    border: solid;
+    border-color: brown;
+    border-width: 3px;
+    border-radius: 40px;
+
+}
+
+.rule-img {
+    margin-left: 65px;
+    margin-top: 65px;
+    height: 347px;
+}
+
+.cross {
+    height: 80px;
+    margin-left: 213px;
+
+}
+
+.cross:hover {
+    opacity: 0.6;
+    transition: 0.55s;
+}
+
+.rule-container {
+    visibility: hidden;
+}
+
+.img-container {
+    height: 570px;
+    margin-left: 460px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 20;
+    border: solid;
+    border-radius: 350px;
+
+}
+
+.rock {
+    position: absolute;
+    margin-left: 17px;
+    margin-top: 15px;
+    z-index: 27;
+    height: 100px;
+}
+
+.rock-holder {
+    height: 135px;
+    width: 140px;
+    background-color: grey;
+    position: absolute;
+    margin-left: 330px;
+    margin-top: 130px;
+    z-index: 23;
+    border: solid;
+    border-width: 1px;
+    border-radius: 400px;
+}
+
+.paper {
+    position: absolute;
+    margin-left: 17px;
+    margin-top: 15px;
+    z-index: 27;
+    height: 100px;
+}
+
+.paper-holder {
+    height: 135px;
+    width: 140px;
+    background-color: grey;
+    position: absolute;
+    margin-left: 520px;
+    margin-top: 340px;
+    z-index: 23;
+    border: solid;
+    border-width: 1px;
+    border-radius: 400px;
+}
+
+.scissor {
+    position: absolute;
+    margin-left: 17px;
+    margin-top: 15px;
+    z-index: 27;
+    height: 100px;
+}
+
+.scissor-holder {
+    height: 135px;
+    width: 140px;
+    background-color: grey;
+    position: absolute;
+    margin-left: 640px;
+    margin-top: 130px;
+    z-index: 23;
+    border: solid;
+    border-width: 1px;
+    border-radius: 400px;
+}
+
+.rock-holder:hover {
+    opacity: 0.7;
+    transition: 0.45s;
+}
+
+.paper-holder:hover {
+    opacity: 0.7;
+    transition: 0.45s;
+}
+
+.scissor-holder:hover {
+    opacity: 0.7;
+    transition: 0.45s;
+}
+
+.score {
+    height: 400px;
+    width: 400px;
+    background-color: bisque;
+    position: absolute;
+    margin-left: 570px;
+    margin-top: 170px;
+    z-index: 33;
+    border: solid;
+    border-color: aqua;
+    border-width: 3px;
+    visibility: hidden;
+    border-radius: 40px;
+
+}
+
+.score-notation {
+    font-size: 25px;
+    padding-top: 20px;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.score-display {
+    height: 70px;
+    width: 180px;
+    font-size: 40px;
+    border: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 20px;
+    background-color: rgb(58, 58, 144);
+    margin-left: 1170px;
+    margin-top: 570px;
+    z-index: 40;
+
+}
+
+.score-display:hover {
+    opacity: 0.9;
+    transition: 0.55s;
+
+}
+
+.cross2 {
+    position: absolute;
+    margin-left: 335px;
+}
+
+.cross2:hover {
+    opacity: 0.6;
+}
+
+.scores {
+    display: inline-block;
+    font-size: 26px;
+    padding-left: 5px;
+}
+
+@media only screen and (max-width:990px) {
+    .box1 {
+        height: 900px;
+        width: 800px;
+        margin-left: 200px;
+        margin-top: 530px;
+
+    }
+
+    .title {
+        font-size: 80px;
+    }
+
+    .start-button {
+        height: 107px;
+        width: 400px;
+        font-size: 65px;
+        margin-top: 290px;
+
+    }
+
+    .rule-button {
+        height: 107px;
+        width: 400px;
+        font-size: 65px;
+        margin-top: 470px;
+    }
+
+    .game-name {
+        font-size: 92px;
+        padding-left: 220px;
+    }
+
+    .game-logo {
+        height: 130px;
+        width: 150px;
+        padding-right: 30px;
+    }
+
+    .header-box {
+        display: flex;
+        width: 800px;
+
+    }
+
+    .rule-box {
+        height: 1000px;
+        width: 840px;
+        margin-left: 290px;
+        margin-top: 750px;
+    }
+
+    .rule-img {
+        height: 720px;
+    }
+
+    .cross {
+        height: 270px;
+        margin-left: 290px;
+    }
+
+    .main-game {
+        margin-top: 480px;
+
+    }
+
+    .rock {
+        height: 260px;
+    }
+
+    .rock-holder {
+        height: 330px;
+        width: 330px;
+        margin-left: 170px;
+    }
+
+    .scissor {
+        height: 280px;
+    }
+
+    .scissor-holder {
+        height: 330px;
+        width: 330px;
+        margin-left: 650px;
+    }
+
+    .paper {
+        height: 280px;
+    }
+
+    .paper-holder {
+        height: 330px;
+        width: 330px;
+        margin-left: 300px;
+        margin-top: 700px;
+    }
+
+    .score-display {
+        height: 190px;
+        width: 410px;
+        font-size: 87px;
+        margin-top: 1370px;
+        margin-left: 370px;
+    }
+
+    .info-box {
+        height: 295px;
+        width: 450px;
+        margin-top: 140px;
+        margin-left: 610px;
+        position: absolute;
+    }
+
+    .info {
+        font-size: 75px;
+    }
+
+    .happen {
+        font-size: 87px;
+    }
+
+    .score {
+        height: 880px;
+        width: 830px;
+        margin-left: 150px;
+        margin-top: 140px;
+        border-radius: 100px;
+
+    }
+
+    .score-notation {
+        font-size: 85px;
+
+    }
+
+    .cross2 {
+        height: 190px;
+        margin-left: 650px;
+    }
+
+    .scores {
+        font-size: 85px;
+
+    }
+}
