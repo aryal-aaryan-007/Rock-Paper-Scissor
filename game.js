@@ -36,7 +36,8 @@ const choises = ["rock", "paper", "scissor"];
 
 function rock() {
     let number = Math.floor(Math.random() *3);
-let compchoise=choises[number];
+    let fix=number.toFixed(0);
+let compchoise=choises[fix];
     if (compchoise == "scissor") {
         win = win + 1;
         document.getElementById("won-score").innerHTML = win;
@@ -57,7 +58,8 @@ let compchoise=choises[number];
 
 function paper() {
     let number = Math.floor(Math.random() * 3);
-let compchoise=choises[number];
+        let fix=number.toFixed(0);
+let compchoise=choises[fix];
     if (compchoise == "rock") {
         win = win + 1;
         document.getElementById("wii").innerHTML = win;
@@ -78,7 +80,8 @@ let compchoise=choises[number];
 
 function scissor() {
     let number = Math.floor(Math.random() * 3);
-let compchoise=choises[number];
+        let fix=number.toFixed(0);
+let compchoise=choises[fix];
     if (compchoise == "paper") {
         win = win + 1;
         document.getElementById("wii").innerHTML = win;
