@@ -35,7 +35,7 @@ let loose = 0;
 const choises = ["rock", "paper", "scissor"];
 
 function rock() {
-    let number = Math.floor(Math.random() * 2+1);
+    let number = Math.floor(Math.random() *3);
 let compchoise=choises[number];
     if (compchoise == "scissor") {
         win = win + 1;
@@ -56,7 +56,7 @@ let compchoise=choises[number];
 }
 
 function paper() {
-    let number = Math.floor(Math.random() * 2+1);
+    let number = Math.floor(Math.random() * 3);
 let compchoise=choises[number];
     if (compchoise == "rock") {
         win = win + 1;
@@ -77,7 +77,7 @@ let compchoise=choises[number];
 }
 
 function scissor() {
-    let number = Math.floor(Math.random() * 2+1);
+    let number = Math.floor(Math.random() * 3);
 let compchoise=choises[number];
     if (compchoise == "paper") {
         win = win + 1;
