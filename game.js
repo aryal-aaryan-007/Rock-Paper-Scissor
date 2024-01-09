@@ -48,7 +48,7 @@ let compchoise=choises[number];
         document.getElementById("happenning").innerHTML = "lost";
 
     }
-    else if (compchoise == "rock") {
+    else  {
         draw = draw + 1;
         document.getElementById("drawn-score").innerHTML = draw;
         document.getElementById("happenning").innerHTML = "drawn";
@@ -69,7 +69,7 @@ let compchoise=choises[number];
         document.getElementById("lost-score").innerHTML = loose;
         document.getElementById("happenning").innerHTML = "lost";
     }
-    else if (compchoise == "paper") {
+    else  {
         draw = draw + 1;
         document.getElementById("drawn-score").innerHTML = draw;
         document.getElementById("happenning").innerHTML = "drawn";
@@ -90,7 +90,7 @@ let compchoise=choises[number];
         document.getElementById("lost-score").innerHTML = loose;
         document.getElementById("happenning").innerHTML = "lost";
     }
-    else if (compchoise == "scissor") {
+    else {
         draw = draw + 1;
         document.getElementById("drawn-score").innerHTML = draw;
         document.getElementById("happenning").innerHTML = "drawn";
