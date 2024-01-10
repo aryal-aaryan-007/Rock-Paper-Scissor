@@ -38,7 +38,7 @@ function rock() {
     let number = Math.floor(Math.random() *3);
     let fix=number.toFixed(0);
 let compchoise=choises[fix];
-           document.getElementById("happenning").innerHTML = compchoise;
+   
     if (compchoise == "scissor") {
         win = win + 1;
         document.getElementById("won-score").innerHTML = win;
@@ -55,13 +55,14 @@ let compchoise=choises[fix];
         document.getElementById("drawn-score").innerHTML = draw;
         document.getElementById("happenning").innerHTML = "drawn";
     }
+            document.getElementById("happenning").innerHTML = compchoise;
 }
 
 function paper() {
     let number = Math.floor(Math.random() * 3);
         let fix=number.toFixed(0);
 let compchoise=choises[fix];
-           document.getElementById("happenning").innerHTML = compchoise;
+       
     if (compchoise == "rock") {
         win = win + 1;
         document.getElementById("wii").innerHTML = win;
@@ -78,13 +79,14 @@ let compchoise=choises[fix];
         document.getElementById("drawn-score").innerHTML = draw;
         document.getElementById("happenning").innerHTML = "drawn";
     }
+        document.getElementById("happenning").innerHTML = compchoise;
 }
 
 function scissor() {
     let number = Math.floor(Math.random() * 3);
         let fix=number.toFixed(0);
 let compchoise=choises[fix];
-           document.getElementById("happenning").innerHTML = compchoise;
+     
     if (compchoise == "paper") {
         win = win + 1;
         document.getElementById("wii").innerHTML = win;
@@ -101,4 +103,5 @@ let compchoise=choises[fix];
         document.getElementById("drawn-score").innerHTML = draw;
         document.getElementById("happenning").innerHTML = "drawn";
     }
+          document.getElementById("happenning").innerHTML = compchoise;
 }
