@@ -55,7 +55,6 @@ let compchoise=choises[fix];
         document.getElementById("drawn-score").innerHTML = draw;
         document.getElementById("happenning").innerHTML = "drawn";
     }
-            document.getElementById("happenning").innerHTML = compchoise;
 }
 
 function paper() {
@@ -79,7 +78,7 @@ let compchoise=choises[fix];
         document.getElementById("drawn-score").innerHTML = draw;
         document.getElementById("happenning").innerHTML = "drawn";
     }
-        document.getElementById("happenning").innerHTML = compchoise;
+    
 }
 
 function scissor() {
@@ -103,5 +102,4 @@ let compchoise=choises[fix];
         document.getElementById("drawn-score").innerHTML = draw;
         document.getElementById("happenning").innerHTML = "drawn";
     }
-          document.getElementById("happenning").innerHTML = compchoise;
 }
